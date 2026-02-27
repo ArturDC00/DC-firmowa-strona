@@ -453,7 +453,7 @@ h1{animation:up .5s .1s ease both}
 //
 // Przykład URL: 'https://hook.eu1.make.com/abc123xyz'
 // ============================================================
-const MAKE_WEBHOOK_URL = 'WSTAW_WEBHOOK_URL_MAKE_TUTAJ';
+const MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/r5k2bmad5ja6r895hvwajnsn9sk8m2jl';
 
 function sendToMake(name, email) {
   if (!email || !email.includes('@')) return false;
@@ -469,7 +469,7 @@ function sendToMake(name, email) {
       utm_source:   utm.get('utm_source')   || '',
       utm_medium:   utm.get('utm_medium')   || '',
       utm_campaign: utm.get('utm_campaign') || '',
-      source_page:  'checklista-software-house',
+      source_page:  'Checklista Download',
       timestamp:    new Date().toISOString()
     })
   })
