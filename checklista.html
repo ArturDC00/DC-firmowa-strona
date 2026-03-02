@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklista: Jak wybrać Software House? 10 Pytań | DC House</title>
+<meta name="description" content="Pobierz darmową checklistę 10 trudnych pytań. Zadaj je, zanim podpiszesz umowę z software housem i chroń swój budżet IT przed przepaleniem. Sprawdź.">
+<meta property="og:title" content="10 Pytań Które Ochronią Twój Budżet IT">
+<meta property="og:description" content="Bezpłatna checklista PDF. Sygnały ostrzegawcze. Interpretacja wyników.">
+<link rel="canonical" href="https://dchouse.pl/checklista">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:    #060910;
+  --card:   #0c1220;
+  --card2:  #0f1a2e;
+  --orange: #e8500a;
+  --gold:   #f0b429;
+  --white:  #ffffff;
+  --muted:  #7a8fa8;
+  --text:   #c0d0e0;
+  --green:  #22c55e;
+  --red:    #ef4444;
+  --border: #1a2d48;
+  --cream:  #f5f0e8;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--text);line-height:1.6;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:14px 48px;background:rgba(6,9,16,.93);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.nav-logo .logo-img{height:36px;width:auto;display:block}
+.nav-logo .logo-text{font-family:'Inter',sans-serif;font-weight:800;font-size:18px;color:var(--white);letter-spacing:-0.5px}
+.nav-logo .logo-text span{color:var(--orange)}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-pill{font-family:'Inter',sans-serif;font-weight:600;font-size:11px;color:var(--orange);border:1px solid var(--orange);padding:8px 20px;border-radius:3px;text-decoration:none;letter-spacing:.5px;transition:all .2s;white-space:nowrap}
+.nav-pill:hover{background:var(--orange);color:#fff}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;place-items:center;padding:120px 48px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 65% 40%,rgba(232,80,10,.07) 0%,transparent 65%),radial-gradient(ellipse 50% 80% at 5% 90%,rgba(12,18,32,.9) 0%,transparent 60%);pointer-events:none}
+.hero-grid{max-width:1140px;width:100%;display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:center;position:relative;z-index:1}
+.eyebrow{font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:var(--orange);letter-spacing:3px;text-transform:uppercase;margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:'';width:36px;height:1px;background:var(--orange)}
+h1{font-family:'Inter',sans-serif;font-size:clamp(38px,5.5vw,66px);font-weight:800;line-height:1.04;color:#fff;letter-spacing:-2px;margin-bottom:16px}
+h1 em{font-style:normal;color:var(--orange);display:block}
+.hero-sub{font-size:17px;color:var(--muted);line-height:1.65;margin-bottom:32px;max-width:500px}
+.social-proof{display:flex;align-items:center;gap:16px}
+.avatars{display:flex}
+.av{width:34px;height:34px;border-radius:50%;background:var(--card2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:14px;margin-left:-10px}
+.av:first-child{margin-left:0}
+.proof-text{font-size:13px;color:var(--muted)}
+.proof-text b{color:var(--text)}
+
+/* FORM CARD */
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:44px 40px;position:relative;box-shadow:0 40px 100px rgba(0,0,0,.5)}
+.form-card::before{content:'';position:absolute;top:0;left:32px;right:32px;height:2px;background:linear-gradient(90deg,transparent,var(--orange),transparent);border-radius:2px}
+.form-title{font-family:'Inter',sans-serif;font-size:21px;font-weight:700;color:#fff;margin-bottom:6px}
+.form-meta{font-size:12px;font-weight:500;color:var(--muted);margin-bottom:30px;letter-spacing:.5px}
+.field{margin-bottom:18px}
+.field label{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;color:var(--muted);letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:8px}
+.field input{width:100%;background:#0a1526;border:1px solid var(--border);border-radius:8px;padding:13px 16px;font-family:'Inter',sans-serif;font-size:15px;color:#fff;outline:none;transition:border-color .2s}
+.field input::placeholder{color:var(--muted);opacity:.5}
+.field input:focus{border-color:var(--orange)}
+.rodo{display:flex;gap:10px;align-items:flex-start;margin-bottom:22px;font-size:12px;color:var(--muted);line-height:1.5}
+.rodo input{margin-top:3px;flex-shrink:0;accent-color:var(--orange)}
+.rodo a{color:var(--orange)}
+.btn-dl{width:100%;background:var(--orange);color:#fff;border:none;border-radius:8px;padding:16px 24px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;letter-spacing:-.2px}
+.btn-dl:hover{background:#cf4509;transform:translateY(-1px);box-shadow:0 12px 32px rgba(232,80,10,.35)}
+.trust-row{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:14px;font-size:12px;color:var(--muted)}
+.trust-dot{width:5px;height:5px;border-radius:50%;background:var(--green)}
+
+/* TAG STRIP */
+.tag-strip{background:var(--card2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 48px}
+.tag-strip-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.strip-label{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;color:var(--muted);letter-spacing:2px;text-transform:uppercase;flex-shrink:0}
+.tags{display:flex;gap:10px;flex-wrap:wrap}
+.tag{background:var(--card);border:1px solid var(--border);border-radius:100px;padding:6px 16px;font-size:13px;color:var(--text);white-space:nowrap}
+
+/* SECTION: CREAM */
+.s-cream{background:var(--cream);padding:100px 48px}
+.s-inner{max-width:1140px;margin:0 auto}
+.s-eyebrow{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;color:var(--orange);letter-spacing:3px;text-transform:uppercase;margin-bottom:16px}
+h2{font-family:'Inter',sans-serif;font-size:clamp(30px,4vw,48px);font-weight:800;line-height:1.08;letter-spacing:-1.2px;margin-bottom:52px}
+h2 em{font-style:normal;color:var(--orange)}
+.three-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.feat-card{background:#fff;border-radius:16px;padding:36px 30px;border:1px solid #ece7df;position:relative;overflow:hidden}
+.feat-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.feat-card:nth-child(1)::after{background:var(--orange)}
+.feat-card:nth-child(2)::after{background:var(--gold)}
+.feat-card:nth-child(3)::after{background:var(--green)}
+.feat-icon{width:48px;height:48px;border-radius:12px;margin-bottom:20px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.feat-card:nth-child(1) .feat-icon{background:rgba(232,80,10,.1)}
+.feat-card:nth-child(2) .feat-icon{background:rgba(240,180,41,.1)}
+.feat-card:nth-child(3) .feat-icon{background:rgba(34,197,94,.1)}
+.feat-title{font-family:'Inter',sans-serif;font-size:18px;font-weight:700;color:#111;margin-bottom:12px;line-height:1.2}
+.feat-body{font-size:14px;color:#4a5568;line-height:1.7}
+.feat-chip{display:inline-block;margin-top:16px;background:#f0ebe3;border-radius:6px;padding:7px 12px;font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:#666}
+
+/* SECTION: DARK - PYTANIA */
+.s-dark{background:var(--ink);padding:100px 48px}
+.s-dark-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 400px;gap:80px;align-items:start}
+.s-dark h2{color:#fff}
+.q-list{display:flex;flex-direction:column;gap:14px}
+.q-row{display:flex;gap:16px;padding:18px 20px;background:var(--card);border:1px solid var(--border);border-radius:12px;transition:border-color .2s,transform .2s}
+.q-row:hover{border-color:rgba(232,80,10,.4);transform:translateX(4px)}
+.q-row.blurred{opacity:.3;filter:blur(3px);pointer-events:none}
+.q-n{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;color:var(--orange);flex-shrink:0;padding-top:2px;min-width:22px}
+.q-content strong{display:block;color:#fff;font-size:14px;margin-bottom:4px;font-weight:600}
+.q-content span{font-size:13px;color:var(--muted);line-height:1.5}
+.q-flag{display:flex;align-items:center;gap:5px;margin-top:7px;font-size:12px;color:#ff9999;font-family:'Inter',sans-serif;font-weight:500}
+
+/* UNLOCK CARD */
+.unlock-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:44px 36px;text-align:center;position:sticky;top:120px}
+.unlock-icon{font-size:48px;display:block;margin-bottom:22px}
+.unlock-title{font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:#fff;margin-bottom:14px}
+.unlock-body{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:28px}
+.btn-unlock{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;border:none;border-radius:8px;padding:14px 28px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;transition:all .2s}
+.btn-unlock:hover{background:#cf4509;transform:translateY(-1px)}
+
+/* AUTOR */
+.s-mid{background:var(--card2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:80px 48px}
+.author-wrap{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:120px 1fr;gap:56px;align-items:center}
+.author-av{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--card),var(--border));border:3px solid var(--orange);display:flex;align-items:center;justify-content:center;font-size:44px;flex-shrink:0}
+.quote-mark{font-family:'Inter',sans-serif;font-size:64px;font-weight:800;color:var(--orange);line-height:.8;margin-bottom:-5px;display:block}
+.author-quote{font-size:20px;color:#fff;font-style:italic;line-height:1.55;margin-bottom:22px}
+.author-name{font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#fff}
+.author-role{font-size:13px;color:var(--muted);margin-top:4px}
+.badges{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+.badge{background:var(--card);border:1px solid var(--border);border-radius:100px;padding:5px 16px;font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:var(--muted)}
+.badge b{color:var(--orange)}
+
+/* INTERPRETACJA */
+.s-interp{background:var(--ink);padding:100px 48px}
+.interp-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-top:52px}
+.i-card{background:var(--card);padding:36px 30px;border-right:1px solid var(--border)}
+.i-card:last-child{border-right:none}
+.i-score{font-family:'Inter',sans-serif;font-size:30px;font-weight:800;margin-bottom:8px}
+.i-label{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.i-desc{font-size:14px;color:var(--text);line-height:1.65}
+
+/* BONUS */
+.s-bonus{background:var(--card2);border-top:1px solid var(--border);padding:80px 48px;text-align:center}
+.bonus-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(240,180,41,.1);border:1px solid rgba(240,180,41,.3);border-radius:100px;padding:7px 22px;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:30px}
+.bonus-q{font-size:clamp(20px,2.8vw,28px);font-style:italic;color:#fff;line-height:1.45;margin-bottom:18px;max-width:700px;margin-inline:auto}
+.bonus-a{font-size:16px;color:var(--muted);line-height:1.7;max-width:600px;margin-inline:auto}
+
+/* FINAL CTA */
+.s-cta{background:var(--ink);padding:100px 48px;text-align:center}
+.cta-wrap{max-width:580px;margin:0 auto}
+.s-cta h2{color:#fff;margin-bottom:16px}
+.cta-sub{font-size:16px;color:var(--muted);margin-bottom:40px;line-height:1.65}
+.inline-form{display:flex;gap:12px;max-width:460px;margin:0 auto 16px}
+.inline-form input{flex:1;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px;font-family:'Inter',sans-serif;font-size:15px;color:#fff;outline:none;transition:border-color .2s}
+.inline-form input:focus{border-color:var(--orange)}
+.inline-form input::placeholder{color:var(--muted)}
+.btn-cta{background:var(--orange);color:#fff;border:none;border-radius:8px;padding:14px 28px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s}
+.btn-cta:hover{background:#cf4509}
+.cta-micro{font-size:13px;color:var(--muted)}
+.divider{border:none;border-top:1px solid var(--border);max-width:360px;margin:56px auto}
+.cta-alt-text{font-size:15px;color:var(--muted);margin-bottom:18px}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:8px;padding:13px 28px;color:var(--text);text-decoration:none;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;transition:all .2s}
+.btn-ghost:hover{border-color:var(--orange);color:var(--orange)}
+
+/* FOOTER */
+footer{background:var(--card);border-top:1px solid var(--border);padding:28px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.f-logo{font-family:'Inter',sans-serif;font-weight:800;font-size:16px;color:#fff;text-decoration:none;display:flex;align-items:center}
+.f-logo .logo-img{height:28px;width:auto}
+.f-logo .logo-text span{color:var(--orange)}
+.f-links{display:flex;gap:24px}
+.f-links a{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s}
+.f-links a:hover{color:var(--orange)}
+.f-copy{font-size:12px;color:var(--muted)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){.nav-links{display:none}}
+@media(max-width:900px){
+  nav{padding:12px 20px}
+  .hero,.s-cream,.s-dark,.s-interp,.s-bonus,.s-cta,.s-mid{padding:60px 20px}
+  .tag-strip{padding:14px 20px}
+  .hero-grid,.s-dark-inner,.author-wrap{grid-template-columns:1fr;gap:40px}
+  .three-grid,.interp-grid{grid-template-columns:1fr}
+  .i-card{border-right:none;border-bottom:1px solid var(--border)}
+  .i-card:last-child{border-bottom:none}
+  .inline-form{flex-direction:column}
+  footer{flex-direction:column;text-align:center}
+  .unlock-card{position:static}
+}
+
+/* ENTRY ANIMATIONS */
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.eyebrow{animation:up .5s ease both}
+h1{animation:up .5s .1s ease both}
+.hero-sub{animation:up .5s .2s ease both}
+.social-proof{animation:up .5s .3s ease both}
+.form-card{animation:up .6s .15s ease both}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Checklista: Jak wybrać Software House? 10 Pytań",
+      "url": "https://kalkulatory-hub.vercel.app/checklista-software-house",
+      "description": "10 trudnych pytań, które ochronią Twój budżet. Zadaj je zanim podpiszesz umowę z software housem."
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "10 Pytań Które Ochronią Twój Budżet",
+      "author": {
+        "@type": "Person",
+        "name": "Artur Jaźwiec"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dimensione Creativa (DC House)",
+        "url": "https://www.dchouse.pl"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PLN"
+      },
+      "fileFormat": "application/pdf"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Jak powinna wyglądać faza Discovery przed wyceną projektu IT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Powinna obejmować minimum 2-5 dni warsztatów, mapowanie procesów As-Is oraz weryfikację ROI przed finalną wyceną. Wycenianie na podstawie krótkiej rozmowy to zgadywanie z buforem bezpieczeństwa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Co to jest umowa Fixed Price w projektach IT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To model rozliczenia z gwarancją zakresu prac. Wymaga jasnej procedury Change Request (CR) z cennikiem ewentualnych zmian w umowie. Należy unikać umów opartych wyłącznie na modelu Time & Material bez ustalonych widełek budżetowych."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kto odpowiada za utrzymanie systemu IT rok po wdrożeniu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kwestię tę powinna regulować umowa supportowa (maintenance) z jasno określonym czasem reakcji SLA (np. poniżej 4 godzin dla błędów krytycznych) i przypisanym dedykowanym opiekunem projektu. Support na żądanie bez SLA to poważny sygnał ostrzegawczy."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <!-- LOGO: podmień src na URL z Wix np. https://static.wixstatic.com/media/XXXX.png -->
+  <a href="https://www.dchouse.pl" class="nav-logo">
+    <img src="/assets/Logo/logo.png" alt="DC House" height="36" class="logo-img"
+         onerror="this.style.display='none';this.parentElement.querySelector('.logo-text').style.display='block'">
+    <span class="logo-text" style="display:none">DC<span>.</span>HOUSE</span>
+  </a>
+  <div class="nav-links">
+    <a href="https://www.dchouse.pl/#rozwiazania">Rozwiązania</a>
+    <a href="https://www.dchouse.pl/case-study">Case Study</a>
+    <a href="https://www.dchouse.pl/tech-insights">Blog</a>
+    <a href="https://www.dchouse.pl/#o-nas">O nas</a>
+  </div>
+  <a href="https://www.dchouse.pl/konsultacje" class="nav-pill">→ Bezpłatna konsultacja</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Bezpłatny zasób · Decydenci IT</div>
+      <h1>Zanim podpiszesz umowę<br>z software housem —<br><em>zadaj te 10 pytań.</em></h1>
+      <p class="hero-sub">Checklista PDF dla CEO i IT Managerów. Napisana przez praktyka po 100+ projektach wdrożeniowych. Każde pytanie ma wyjaśnienie i czerwoną flagę.</p>
+      <div class="social-proof">
+        <div class="avatars">
+          <div class="av">👔</div><div class="av">💼</div><div class="av">🏢</div><div class="av">+</div>
+        </div>
+        <p class="proof-text">Pobrało już <b>240+ decydentów IT</b> z całej Polski</p>
+      </div>
+    </div>
+
+    <div class="form-card" id="formularz">
+      <div class="form-title">Pobierz bezpłatną checklistę</div>
+      <div class="form-meta">PDF · 2 strony · dostęp natychmiastowy</div>
+      <div class="field">
+        <label>Imię</label>
+        <input type="text" id="input-name" placeholder="Jak mam się zwracać?">
+      </div>
+      <div class="field">
+        <label>Email firmowy</label>
+        <input type="email" id="input-email" placeholder="twoj@firma.pl">
+      </div>
+      <div class="rodo">
+        <input type="checkbox" id="r1">
+        <label for="r1">Wyrażam zgodę na przesłanie materiałów i kontakt od DC House (Dimensione Creativa Sp. z o.o.). <a href="https://www.dchouse.pl/polityka-prywatnosci">Polityka prywatności</a>.</label>
+      </div>
+      <button class="btn-dl" id="hero-submit">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Pobierz checklistę PDF
+      </button>
+      <div class="trust-row">
+        <div class="trust-dot"></div>
+        <span>Zero spamu &nbsp;·&nbsp; PDF w ciągu 60 sekund &nbsp;·&nbsp; Bez zobowiązań</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TAG STRIP -->
+<div class="tag-strip">
+  <div class="tag-strip-inner">
+    <span class="strip-label">Co zawiera:</span>
+    <div class="tags">
+      <span class="tag">☐ 10 pytań z wyjaśnieniami</span>
+      <span class="tag">🚩 Sygnały ostrzegawcze</span>
+      <span class="tag">📊 Interpretacja wyników</span>
+      <span class="tag">⭐ Pytanie bonusowe</span>
+      <span class="tag">📄 Format A4 · Print-ready</span>
+    </div>
+  </div>
+</div>
+
+<!-- CO OTRZYMUJESZ -->
+<section class="s-cream">
+  <div class="s-inner">
+    <div class="s-eyebrow">Co dostajesz</div>
+    <h2 style="color:#111">Nie kolejny artykuł.<br><em>Narzędzie które chroni budżet.</em></h2>
+    <div class="three-grid">
+      <div class="feat-card">
+        <div class="feat-icon">☐</div>
+        <div class="feat-title">10 pytań z pełnym kontekstem</div>
+        <div class="feat-body">Każde pytanie ma wyjaśnienie <strong>czego szukasz</strong> i co oznacza gdy software house milczy lub daje ogólnik. Nie pytania dla IT — pytania dla CEO.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🚩</div>
+        <div class="feat-title">Czerwone flagi przy każdym</div>
+        <div class="feat-body">Wprost napisane: gdy słyszysz <em>„wyceniamy na podstawie krótkiej rozmowy"</em> lub <em>„u nas nie ma Change Requestów"</em> — wyjdź z tej rozmowy.</div>
+        <div class="feat-chip">10 konkretnych sygnałów ostrzegawczych</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📊</div>
+        <div class="feat-title">Interpretacja wyników</div>
+        <div class="feat-body">Po spotkaniu policz ile odpowiedzi Cię satysfakcjonuje. 8–10 to dobry znak. Poniżej 5 — zmień wykonawcę zanim podpiszesz umowę.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PODGLĄD PYTAŃ -->
+<section class="s-dark">
+  <div class="s-dark-inner">
+    <div>
+      <div class="eyebrow" style="animation:none">Podgląd checklisity</div>
+      <h2>Pierwsze 3 pytania.<br><em>Pozostałe 7 w PDF.</em></h2>
+      <div class="q-list">
+        <div class="q-row">
+          <div class="q-n">01.</div>
+          <div class="q-content">
+            <strong>Jak wygląda Wasza faza Discovery przed wyceną?</strong>
+            <span>Szukasz: minimum 2–5 dni warsztatów, mapa procesów As-Is, weryfikacja ROI przed wyceną.</span>
+            <div class="q-flag">🚩 „Wyceniamy na podstawie krótkiej rozmowy telefonicznej."</div>
+          </div>
+        </div>
+        <div class="q-row">
+          <div class="q-n">02.</div>
+          <div class="q-content">
+            <strong>Czy wycena jest Fixed Price z gwarancją zakresu?</strong>
+            <span>Szukasz: jasno zdefiniowany zakres + procedura Change Request z cennikiem.</span>
+            <div class="q-flag">🚩 Wyłącznie Time &amp; Material bez żadnych widełek budżetowych.</div>
+          </div>
+        </div>
+        <div class="q-row">
+          <div class="q-n">03.</div>
+          <div class="q-content">
+            <strong>Ile Change Requestów było w ostatnich 3 projektach?</strong>
+            <span>Szukasz: transparentna odpowiedź z kontekstem — nie zero, bo zero jest niemożliwe.</span>
+            <div class="q-flag">🚩 „U nas praktycznie nie ma CR-ów." — to kłamstwo.</div>
+          </div>
+        </div>
+        <div class="q-row blurred">
+          <div class="q-n">04–07.</div>
+          <div class="q-content"><strong>Pytania 4–7 dostępne w PDF</strong><span>Dot. ryzyko, testowanie, dokumentacja techniczna, mierzenie sukcesu projektu.</span></div>
+        </div>
+        <div class="q-row blurred">
+          <div class="q-n">08–10.</div>
+          <div class="q-content"><strong>Pytania 8–10 dostępne w PDF</strong><span>Dot. support po wdrożeniu, referencje z branży, procedura przekroczenia budżetu.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="unlock-card">
+      <span class="unlock-icon">📋</span>
+      <div class="unlock-title">Odblokuj wszystkie 10 pytań</div>
+      <div class="unlock-body">Pytania 4–10 dotyczą testowania, supportu, referencji z podobnej branży i procedury gdy projekt przekroczy budżet z winy software house'u. Te pytania decydują o wyniku projektu.</div>
+      <a href="#formularz" class="btn-unlock">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Pobierz bezpłatny PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOR -->
+<section class="s-mid">
+  <div class="author-wrap">
+    <div class="author-av">👤</div>
+    <div>
+      <span class="quote-mark">"</span>
+      <p class="author-quote">Tę checklistę napisałem po tym jak widziałem zbyt wiele firm które płaciły setki tysięcy złotych za wdrożenia skazane na porażkę od pierwszej rozmowy. Złe pytania na początku kosztują więcej niż zły kod w trakcie.</p>
+      <div class="author-name">Artur Jaźwiec</div>
+      <div class="author-role">Założyciel DC House · Dimensione Creativa Sp. z o.o.</div>
+      <div class="badges">
+        <span class="badge"><b>100+</b> projektów IT</span>
+        <span class="badge"><b>15+</b> lat doświadczenia</span>
+        <span class="badge">Credit Suisse · HP Inc.</span>
+        <span class="badge">Wrocław</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERPRETACJA -->
+<section class="s-interp">
+  <div class="s-inner">
+    <div class="s-eyebrow">Jak korzystać</div>
+    <h2>Policz odpowiedzi.<br><em>Wyciągnij wnioski.</em></h2>
+    <div class="interp-grid">
+      <div class="i-card">
+        <div class="i-score" style="color:var(--green)">8–10 ✅</div>
+        <div class="i-label">Dobry znak</div>
+        <div class="i-desc">Firma jest transparentna i procesowa. Nie gwarantuje sukcesu projektu, ale znacząco zmniejsza ryzyko. Warto kontynuować rozmowy i poprosić o referencje z podobnej branży.</div>
+      </div>
+      <div class="i-card">
+        <div class="i-score" style="color:var(--gold)">5–7 ✅</div>
+        <div class="i-label">Warto drążyć</div>
+        <div class="i-desc">Zadaj pytania uzupełniające przy każdym sygnale ostrzegawczym. Może to kwestia komunikacji — może ukryte ryzyko. Poproś o spotkanie z deweloperem który będzie pracował na projekcie.</div>
+      </div>
+      <div class="i-card">
+        <div class="i-score" style="color:var(--red)">Poniżej 5 ✅</div>
+        <div class="i-label">Poważne ryzyko</div>
+        <div class="i-desc">Rozważ zmianę wykonawcy lub niezależny audyt przed podpisaniem umowy. Ta firma prawdopodobnie nie jest gotowa na Twój projekt — a Ty zapłacisz za ich naukę.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BONUS -->
+<section class="s-bonus">
+  <div style="max-width:760px;margin:0 auto;text-align:center">
+    <div class="bonus-chip">⭐ Pytanie bonusowe — najważniejsze</div>
+    <p class="bonus-q">„Opowiedzcie mi o projekcie który się nie udał<br>i co z tego wyciągnęliście."</p>
+    <p class="bonus-a">Dobra firma ma taką historię. Opowiada ją z dumą — bo się z niej nauczyła. Firma która zawsze dowozi i nie ma żadnych porażek — kłamie albo nie realizuje projektów na Twoją skalę. To jedno pytanie powie Ci więcej niż cała reszta rozmowy.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="s-cta">
+  <div class="cta-wrap">
+    <h2>Pobierz.<br>Zanim podpiszesz.</h2>
+    <p class="cta-sub">Bezpłatny PDF · 2 strony · dostęp natychmiastowy.<br>Jeden email z plikiem i tyle. Zero spamu.</p>
+    <div class="inline-form">
+      <input type="email" id="cta-email" placeholder="twoj@firma.pl">
+      <button class="btn-cta" id="cta-submit">Pobierz →</button>
+    </div>
+    <p class="cta-micro">✓ Bezpłatnie &nbsp;·&nbsp; ✓ Natychmiast &nbsp;·&nbsp; ✓ Bez zobowiązań</p>
+    <hr class="divider">
+    <p class="cta-alt-text">Masz projekt na horyzoncie?</p>
+    <a href="https://www.dchouse.pl/konsultacje" class="btn-ghost">Umów bezpłatną sesję kwalifikacyjną →</a>
+  </div>
+</section>
+
+<footer>
+  <!-- LOGO FOOTER: podmień src na URL logo z Wix -->
+  <a href="https://www.dchouse.pl" class="f-logo">
+    <img src="/assets/Logo/logo.png" alt="DC House" height="28" class="logo-img"
+         onerror="this.style.display='none';this.nextSibling.nextSibling.style.display='inline'">
+    <span class="logo-text" style="display:none">DC<span>.</span>HOUSE</span>
+  </a>
+  <div class="f-links">
+    <a href="https://www.dchouse.pl/tech-insights">Blog</a>
+    <a href="/kalkulatory">Kalkulatory</a>
+    <a href="https://www.dchouse.pl/konsultacje">Konsultacje</a>
+    <a href="https://www.dchouse.pl/anatomiaporazkiit">Anatomia Porażki IT</a>
+  </div>
+  <div class="f-copy">© 2026 Dimensione Creativa Sp. z o.o.</div>
+</footer>
+
+<script>
+// ============================================================
+// FORMULARZ → MAKE WEBHOOK → BITRIX LEAD + EMAIL Z CHECKLISTĄ
+//
+// Konfiguracja:
+// 1. Podmień MAKE_WEBHOOK_URL na URL scenariusza w Make.com
+//    (Moduł: Custom webhook → Bitrix24 utwórz lead → Email z PDF)
+// 2. W Make skonfiguruj moduł Email: załącz checklista-dchouse.pdf
+//
+// Przykład URL: 'https://hook.eu1.make.com/abc123xyz'
+// ============================================================
+const MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/r5k2bmad5ja6r895hvwajnsn9sk8m2jl';
+
+function sendToMake(name, email) {
+  if (!email || !email.includes('@')) return false;
+
+  const utm = new URLSearchParams(window.location.search);
+
+  fetch(MAKE_WEBHOOK_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: name || '',
+      email: email,
+      utm_source:   utm.get('utm_source')   || '',
+      utm_medium:   utm.get('utm_medium')   || '',
+      utm_campaign: utm.get('utm_campaign') || '',
+      source_page:  'Checklista Download',
+      timestamp:    new Date().toISOString()
+    })
+  })
+  .then(r => { try { return r.json(); } catch(e) { return {}; } })
+  .then(data => console.log('Make webhook OK:', data))
+  .catch(err  => console.warn('Make webhook error:', err));
+  // Nie blokuj użytkownika nawet jeśli webhook zawiedzie
+  return true;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Smooth scroll do formularza
+  document.querySelectorAll('a[href="#formularz"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('formularz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // --- Główny formularz hero ---
+  const heroBtn = document.getElementById('hero-submit');
+  if (heroBtn) {
+    heroBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const emailInput = document.getElementById('input-email');
+      const nameInput  = document.getElementById('input-name');
+      const rodoCheck  = document.getElementById('r1');
+
+      if (!rodoCheck || !rodoCheck.checked) {
+        if (rodoCheck) rodoCheck.style.outline = '2px solid #e8500a';
+        return;
+      }
+
+      const email = emailInput ? emailInput.value.trim() : '';
+      const name  = nameInput  ? nameInput.value.trim()  : '';
+
+      if (!email || !email.includes('@')) {
+        if (emailInput) emailInput.style.borderColor = '#e8500a';
+        return;
+      }
+
+      const ok = sendToMake(name, email);
+      if (ok) {
+        heroBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Wysłano! Sprawdź email.';
+        heroBtn.style.background = '#22c55e';
+        heroBtn.disabled = true;
+      }
+    });
+  }
+
+  // --- Dolny inline form ---
+  const ctaBtn = document.getElementById('cta-submit');
+  if (ctaBtn) {
+    ctaBtn.addEventListener('click', function() {
+      const input = document.getElementById('cta-email');
+      const email = input ? input.value.trim() : '';
+
+      if (!email || !email.includes('@')) {
+        if (input) input.style.borderColor = '#e8500a';
+        return;
+      }
+
+      const ok = sendToMake('', email);
+      if (ok) {
+        ctaBtn.textContent = '✓ Wysłano!';
+        ctaBtn.style.background = '#22c55e';
+        if (input) input.value = '';
+      }
+    });
+  }
+
+  // Enter w polach email
+  document.querySelectorAll('input[type="email"]').forEach(input => {
+    input.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        const btn = this.closest('.form-card, .inline-form')?.querySelector('button');
+        if (btn) btn.click();
+      }
+    });
+  });
+
+});
+</script>
+</body>
+</html>

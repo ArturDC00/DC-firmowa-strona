@@ -2,8 +2,10 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/checklista-software-house", "destination": "/checklista", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/checklista", "destination": "/checklista-software-house" },
     { "source": "/kalkulatory", "destination": "/kalkulatory" }
   ],
   "headers": [
